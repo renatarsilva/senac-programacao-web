@@ -1,52 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Teste de Fontes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Propriedades de Background</title>
     <style>
-      #fonte-arial-vermelha {
-        font-family: Arial, sans-serif;
-        color: red;
+      /* Insira o código CSS acima aqui */
+      .fundo-pagina-azul {
+        background-color: lightblue;
       }
 
-      #fonte-times-verde {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 22px;
-        color: green;
+      .fundo-paragrafo-verde {
+        background-color: lightgreen;
       }
 
-      #fonte-comic-italico {
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20px;
-        color: blue;
-        font-style: italic;
+      .fundo-imagem-fixo {
+        background-image: url("https://picsum.photos/400/300");
+        background-repeat: repeat;
+        background-attachment: fixed;
       }
 
-      #fonte-verdana-amarela {
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 14px;
-        color: yellow;
-        font-weight: 500;
-        font-style: normal;
+      .fundo-imagem-vertical {
+        background-image: url("https://picsum.photos/100/100");
+        background-repeat: repeat-y;
       }
 
-      body {
-        background-color: #333;
-        padding: 20px;
+      .fundo-imagem-sem-repeticao {
+        background-image: url("https://picsum.photos/800/600");
+        background-repeat: no-repeat;
+      }
+
+      .fundo-imagem-centralizada {
+        background-image: url("https://picsum.photos/600/400");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .fundo-personalizado {
+        background: yellow url("https://picsum.photos/300/300") no-repeat center
+          scroll;
       }
     </style>
   </head>
-  <body>
-    <h1 id="fonte-arial-vermelha">Texto com Arial e cor vermelha</h1>
-
-    <p id="fonte-times-verde">Texto com Times, tamanho 22 e cor verde</p>
-
-    <p id="fonte-comic-italico">
-      Texto com Comic Sans, tamanho 20, azul e itálico
+  <body class="fundo-pagina-azul">
+    <h1>Testando Propriedades de Fundo</h1>
+    <p>
+      Esta página tem um fundo azul claro, aplicando a classe
+      <strong>.fundo-pagina-azul</strong> no elemento body.
     </p>
 
-    <p id="fonte-verdana-amarela">
-      Texto com Verdana, tamanho 14, cor amarela, negrito e espessura média
+    <hr />
+
+    <p class="fundo-paragrafo-verde">
+      Este parágrafo tem um fundo verde claro, demonstrando a classe
+      <strong>.fundo-paragrafo-verde</strong>.
     </p>
+
+    <hr />
+
+    <div
+      class="fundo-imagem-fixo"
+      style="height: 300px; border: 2px solid black"
+    >
+      <p style="color: white; padding: 20px">
+        Este bloco de conteúdo tem uma imagem de fundo que se repete e fica
+        fixa, sem se mover com a rolagem da página. (Classe
+        <strong>.fundo-imagem-fixo</strong>)
+      </p>
+    </div>
+
+    <hr />
+
+    <div
+      class="fundo-imagem-vertical"
+      style="height: 300px; border: 2px solid black"
+    >
+      <p style="padding: 20px">
+        Aqui, a imagem de fundo se repete apenas na vertical. (Classe
+        <strong>.fundo-imagem-vertical</strong>)
+      </p>
+    </div>
+
+    <hr />
+
+    <div
+      class="fundo-imagem-sem-repeticao"
+      style="height: 300px; border: 2px solid black"
+    >
+      <p style="padding: 20px">
+        Esta imagem de fundo não se repete. (Classe
+        <strong>.fundo-imagem-sem-repeticao</strong>)
+      </p>
+    </div>
+
+    <hr />
+
+    <div
+      class="fundo-imagem-centralizada"
+      style="height: 300px; border: 2px solid black"
+    >
+      <p style="padding: 20px">
+        Esta imagem de fundo não se repete e está centralizada. (Classe
+        <strong>.fundo-imagem-centralizada</strong>)
+      </p>
+    </div>
+
+    <hr />
+
+    <div
+      class="fundo-personalizado"
+      style="height: 400px; border: 2px solid black"
+    >
+      <p style="padding: 20px">
+        Este bloco combina cor de fundo (amarela), imagem, sem repetição,
+        centralizada, e que acompanha a rolagem. (Classe
+        <strong>.fundo-personalizado</strong>)
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
