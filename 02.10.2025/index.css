@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.container{
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
